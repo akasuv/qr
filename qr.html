@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QR Test</title>
+    <script src="./experimental.js"></script>
+  </head>
+  <body>
+    <h1>QR Test</h1>
+    <script>
+      var div = document.createElement("div");
+      //   text = "https://link3.to/link3",
+      //   qrValue = QRCode.generate(text, {
+      //     version: 3,
+      //     ecclevel: "M",
+      //     fillcolor: "#F2F2F2",
+      //     textcolor: "#D13438",
+      //     margin: 4,
+      //     modulesize: 8,
+      //   });
+
+      // qr = QRCode.generateSVG(text, {
+      //   version: 3,
+      //   ecclevel: "M",
+      //   fillcolor: "#F2F2F2",
+      //   textcolor: "#D13438",
+      //   margin: 4,
+      //   modulesize: 8,
+      // });
+
+      var imageElement = document.createElement("img");
+
+      var qr = QQQ("https://link3.to/cyberconnect");
+
+      imageElement.src = qr;
+
+      div.appendChild(imageElement);
+      div.style.width = div.style.height = "400px";
+      document.body.appendChild(div);
+    </script>
+  </body>
+</html>
